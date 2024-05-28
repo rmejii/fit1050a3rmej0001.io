@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolce Mio | Pasticceria & Gelateria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Staatliches&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!--Logo is turned white in the css with a filter on dark mode-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="croplogo.png" alt="logo" width="100" height="96" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Cakes
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Occasional Cakes</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Celebratory Cakes</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Seasonal Cakes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Sweets & Savouries
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Seasonal Treats</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Other Popular Treats</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Wholesale Products
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Bread</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Catering</a>
+                                </li>
+                                <li class="cs-drop-li">
+                            </ul>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cs-contact-group">
+                <a href="tel:+84 1985 33 999" class="cs-phone">
+                    <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                    +84 1985 33 999
+                </a>
+                <div class="cs-social">
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+            </div>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button> -->
+        </div>
+    </header>
+
+      
+
+
+<body>
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-1619">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">
+                    Order with us today!
+                </span>
+                <h1 class="cs-title">Cakes, Biscuits, Pastries, Savoury Foods, Traditional Cakes & Gelati All Made On Premises
+                </h1>
+                <a href="" class="cs-button-solid">Make an Order</a>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">100% Refund Return</h3>
+                    <p class="cs-item-text">
+                        We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/speedometer.svg" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">Expert Patisseries</h3>
+                    <p class="cs-item-text">
+                        We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">Local Favourite</h3>
+                    <p class="cs-item-text">
+                        We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="star.png" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">Highly Rated</h3>
+                    <p class="cs-item-text">
+                        We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1561339405-e1dd0d129449?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1561339405-e1dd0d129449?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img decoding="async" src="https://images.unsplash.com/photo-1561339405-e1dd0d129449?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="meeting" width="2250" height="1500" aria-hidden="true">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1446">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Gallery</span>
+                <h2 class="cs-title">Our Best Sellers</h2>
+            </div>
+        </div>
+        <!--Gallery-->
+        <div class="cs-gallery">
+            
+            <!--Picture 1-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1694496982785-11c52c0f60b7?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1694496982785-11c52c0f60b7?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1694496982785-11c52c0f60b7?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1695275675120-b9e5417c3066?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1695275675120-b9e5417c3066?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1695275675120-b9e5417c3066?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 3-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1624001934657-640af7e2c599?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1624001934657-640af7e2c599?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1624001934657-640af7e2c599?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 4-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1636628040211-7d15f57c230e?q=80&w=1743&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1636628040211-7d15f57c230e?q=80&w=1743&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1636628040211-7d15f57c230e?q=80&w=1743&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 5-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1469533778471-92a68acc3633?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1469533778471-92a68acc3633?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1469533778471-92a68acc3633?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 6-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1596698184973-5f9e0ddc7faa?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1596698184973-5f9e0ddc7faa?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1596698184973-5f9e0ddc7faa?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 7-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1654870032519-9db00597cd78?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1654870032519-9db00597cd78?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1654870032519-9db00597cd78?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery" width="305" height="400">
+            </picture>
+            <!--Picture 8-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1601654847092-712aff26313c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1601654847092-712aff26313c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1601654847092-712aff26313c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery" width="305" height="400">
+            </picture>
+        </div>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-1675">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Steps</span>
+            <h2 class="cs-title">How To Get Started</h2>
+            <p class="cs-text">
+                Designed to maintain your current colour, blend out a growing root or balance your blonde while providing full and semi-permanent coverage.
+            </p>
+
+            <button class="cs-button"><span></span>Order Now</button>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">01</span>
+                <h3 class="cs-h3">Contact With Us</h3>
+                <p class="cs-item-text">
+                    We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">02</span>
+                <h3 class="cs-h3">Make An Order</h3>
+                <p class="cs-item-text">
+                    Fortune 500 companies to smaller and medium-sized companies to help manage risks to as low as reasonably practical.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">03</span>
+                <h3 class="cs-h3">Provide Details</h3>
+                <p class="cs-item-text">
+                    Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">04</span>
+                <h3 class="cs-h3">Wait For Arrival</h3>
+                <p class="cs-item-text">
+                    Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <script src="js/script.js"></script>
+</section>
+          
+    <!-- ============================================ -->
+    <!--                  Collection                  -->
+    <!-- ============================================ -->
+
+    <section id="collection-1577">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Categories</span>
+                <h2 class="cs-title">Top Categories</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <span class="cs-category">Cakes</span>
+                        <picture class="cs-background" aria-hidden="true">
+                            <source media="(max-width: 600px)"
+                                    srcset="https://images.unsplash.com/photo-1568827999250-3f6afff96e66?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <source media="(min-width: 601px)"
+                                    srcset="https://images.unsplash.com/photo-1568827999250-3f6afff96e66?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <img loading="lazy" decoding="async"
+                                    src="https://images.unsplash.com/photo-1568827999250-3f6afff96e66?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    width="365" height="201" alt="cake">
+                        </picture>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <span class="cs-category">Sweets & Savouries</span>
+                        <picture class="cs-background" aria-hidden="true">
+                            <source media="(max-width: 600px)"
+                                    srcset="https://images.unsplash.com/photo-1543773495-2cd9248a5bda?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <source media="(min-width: 601px)"
+                                    srcset="https://images.unsplash.com/photo-1543773495-2cd9248a5bda?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <img loading="lazy" decoding="async"
+                                    src="https://images.unsplash.com/photo-1543773495-2cd9248a5bda?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="365"
+                                    height="201" alt="sweet slice">
+                        </picture>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <span class="cs-category">Wholesale Products</span>
+                        <picture class="cs-background" aria-hidden="true">
+                            <source media="(max-width: 600px)"
+                                    srcset="https://images.unsplash.com/photo-1486893732792-ab0085cb2d43?q=80&w=1864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <source media="(min-width: 601px)"
+                                    srcset="https://images.unsplash.com/photo-1486893732792-ab0085cb2d43?q=80&w=1864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <img loading="lazy" decoding="async"
+                                    src="https://images.unsplash.com/photo-1486893732792-ab0085cb2d43?q=80&w=1864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    width="365" height="201" alt="shoes">
+                        </picture>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <span class="cs-category">Make a Custom Order</span>
+                        <picture class="cs-background" aria-hidden="true">
+                            <source media="(max-width: 600px)"
+                                    srcset="https://images.unsplash.com/photo-1695904255931-78b11e1cb049?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <source media="(min-width: 601px)"
+                                    srcset="https://images.unsplash.com/photo-1695904255931-78b11e1cb049?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                            <img loading="lazy" decoding="async"
+                                    src="https://images.unsplash.com/photo-1695904255931-78b11e1cb049?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    width="365" height="201" alt="perfume">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>   
+                                
+    <script src="js/script.js"></script>
+</body>
+    <!-- ============================================ -->
+    <!--                  Footer                      -->
+    <!-- ============================================ -->
+
+    <footer id="footer-1147">
+        <div class="cs-container">
+            <div class="cs-top">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" loading="lazy" decoding="async" src="logo.png" alt="logo" width="200" height="75">
+                </a>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">About</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Services</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Donations</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Events</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Blog</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-bottom">
+                <!--Social-->
+                <ul class="cs-social">
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+                
+                <span class="cs-copyright">
+                    © Copyright 2023 - <a href="" class="cs-copyright-link">Dolce Mio</a>
+                </span>
+            </div>
+        </div>
+        <!--Background-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1615557509870-98972c5e1396?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1615557509870-98972c5e1396?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1615557509870-98972c5e1396?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="kids" width="1280" height="568">
+        </picture>
+    </footer>
+
+</html>
