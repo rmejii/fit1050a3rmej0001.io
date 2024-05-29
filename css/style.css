@@ -1,7 +1,7 @@
 :root {
   /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
   --primary: #993036ff;
-  --primaryLight: #aa7417;
+  --primaryLight: #ffba43;
   --secondary: #ffba43;
   --secondaryLight: #ffba43;
   --headerColor: #1a1a1a;
@@ -729,6 +729,77 @@ body {
   }
 }
 
+.action {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+  z-index: 20000;
+}
+.action span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  font-size: 2em;
+  transition: .3s ease-in-out;
+}
+.action.active span  {
+  transform: rotate(135deg);
+}
+
+.action ul {
+  font-family: "Urbanist", "sans-serif";
+  position: absolute;
+  bottom: 55px;
+  background: #fff;
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  z-index: 20001;
+}
+.action.active ul {
+  bottom: 65px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s;
+}
+.action ul li {
+  list-style:none;
+   text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7px 0;
+}
+
+.action ul li:hover {
+  font-weight: 600;
+}
+.action ul li:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.action ul li img {
+  margin-right: 15px;
+  opacity: .2;
+  transform: scale(.7);
+}
+.action ul li:hover img {  
+  opacity: .8;
+  transform: scale(1.0);
+}
+
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
@@ -1074,47 +1145,6 @@ body {
     /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
     font-family: "Urbanist", sans-serif;
     max-width: 32.625rem;
-  }
-  #steps-1675 .cs-button {
-    margin: 10px;
-    padding: 25px 30px;
-    box-sizing: border-box;
-    font-family: "Urbanist", sans-serif;
-  }
-  #steps-1675 button{
-    position: relative;
-    padding: 25px 45px;
-    font-size: 1.5rem;
-    border-radius: 15px;
-    border: none;
-    background: #993036ff;
-    color: #fff;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  #steps-1675 button:active{
-    transform: scale(0.95);
-  }
-  #steps-1675 button span{
-    position: absolute;
-    background: rgb(100, 31, 35);
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-    border-radius: 50%;
-    animation: ripple 2s linear infinite;
-    transition: 0.5s;
-  }
-  @keyframes ripple{
-    0%{
-      width: 0;
-      height: 0;
-      opacity: 0.5;
-    }
-    100%{
-      width: 500px;
-      height: 500px;
-      opacity: 0;
-    }
   }
   #steps-1675 .cs-card-group {
     margin: 0;
