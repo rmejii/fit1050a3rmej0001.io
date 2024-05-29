@@ -1438,7 +1438,7 @@ body {
       transition: color 0.3s;
   }
   #footer-1147 .cs-link:hover {
-      color: var(--secondary);
+      color: var(--primary);
   }
   #footer-1147 .cs-logo {
       width: 15rem;
@@ -1479,7 +1479,7 @@ body {
       transition: background-color 0.3s;
   }
   #footer-1147 .cs-social-link:hover {
-      background-color: var(--secondary);
+      background-color: var(--primary);
   }
   #footer-1147 .cs-social-link:hover .cs-social-icon {
       filter: grayscale(1) brightness(0);
